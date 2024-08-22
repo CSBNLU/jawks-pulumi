@@ -48,12 +48,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          registry-url: https://npm.pkg.github.com/
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
           registry-url: "https://registry.npmjs.org"
-          scope: '@csbnlu'
+          scope: "@csbnlu"
       - run: yarn install --immutable --immutable-cache --check-cache
       - run: npm publish --access public
         env:
