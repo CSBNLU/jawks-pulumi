@@ -1,9 +1,6 @@
 {
   "name": "@csbnlu/jawks-pulumi",
   "version": "0.0.3",
-  "publishConfig": {
-    "@csbnlu:registry": "https://npm.pkg.github.com"
-  },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.143",
     "prettier": "^3.3.3"
