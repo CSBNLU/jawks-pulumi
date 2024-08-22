@@ -1,9 +1,11 @@
 {
   "name": "@csbnlu/jawks-pulumi",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.143",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.632.0",
@@ -18,8 +20,8 @@
     "zod": "^3.23.8"
   },
   "files": [
-    "index.ts",
-    "/src"
+    "/dist"
   ],
+  "main": "dist/index.js",
   "license": "AGPL-3.0-or-later"
 }

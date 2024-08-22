@@ -1,2 +1,3 @@
-export * as CompositionRoot from "./composition-root";
-export * as JWKS from "./module";
+import * as Stack from "./stack";
+
+module.exports = Stack;
