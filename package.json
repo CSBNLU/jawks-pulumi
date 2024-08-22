@@ -1,12 +1,10 @@
 {
-  "name": "@csbnlu/jwks-aws-pulumi",
+  "name": "@csbnlu/jawks-pulumi",
+  "version": "0.0.1",
   "publishConfig": {
     "@csbnlu:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
-    "@pulumi/aws": "^6.49.1",
-    "@pulumi/aws-apigateway": "^2.6.0",
-    "@pulumi/pulumi": "^3.129.0",
     "@types/aws-lambda": "^8.10.143",
     "prettier": "^3.3.3"
   },
@@ -15,11 +13,10 @@
     "@aws-sdk/client-s3": "^3.635.0",
     "@aws-sdk/client-secrets-manager": "^3.635.0",
     "@aws-sdk/lib-dynamodb": "^3.632.0",
-    "@pulumi/aws": "^6.0.0",
-    "@pulumi/aws-apigateway": "^2.0.0",
-    "@pulumi/pulumi": "^3.113.0",
+    "@pulumi/aws": "^6.49.1",
+    "@pulumi/aws-apigateway": "^2.6.0",
+    "@pulumi/pulumi": "^3.129.0",
     "aws-lambda": "^1.0.7",
-    "aws-sdk": "^2.1678.0",
     "jose": "^5.7.0",
     "zod": "^3.23.8"
   }
