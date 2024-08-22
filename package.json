@@ -1,6 +1,6 @@
 {
   "name": "@csbnlu/jawks-pulumi",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.143",
     "prettier": "^3.3.3",
