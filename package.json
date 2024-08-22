@@ -7,7 +7,8 @@
     "@pulumi/aws": "^6.49.1",
     "@pulumi/aws-apigateway": "^2.6.0",
     "@pulumi/pulumi": "^3.129.0",
-    "@types/aws-lambda": "^8.10.143"
+    "@types/aws-lambda": "^8.10.143",
+    "prettier": "^3.3.3"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.632.0",
