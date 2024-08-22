@@ -3,7 +3,7 @@
     "outDir": "dist",
     "target": "es2020",
     "declaration": true,
-    "module": "es2022",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "noImplicitAny": true,
     "sourceMap": true,
