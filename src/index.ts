@@ -1,3 +1,1 @@
-import * as Stack from "./stack";
-
-module.exports = Stack;
+export * as Stack from "./stack";
