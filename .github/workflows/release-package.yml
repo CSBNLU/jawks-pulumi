@@ -23,6 +23,12 @@ jobs:
           node-version: 22
       - run: yarn install --immutable --immutable-cache --check-cache
       - run: yarn run tsc
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            dist
 
   publish-gpr:
     needs: build
@@ -36,8 +42,10 @@ jobs:
         with:
           node-version: 22
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn run tsc
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -52,8 +60,10 @@ jobs:
           node-version: 22
           registry-url: "https://registry.npmjs.org"
           scope: "@csbnlu"
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn run tsc
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
